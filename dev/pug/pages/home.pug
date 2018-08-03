@@ -13,98 +13,91 @@ block body-content
 	header.page-header.js-header
 		.page-header__inner
 			.page-header__logo
-				h1 Bak-one
+				h1 华钧广汇
 				| &nbsp;
-				span One page flat template
+				span 开放 效率 致远
 			nav.page-header__nav.js-nav
 				ul
 					li
-						a.page-header__nav-link.js-anchor.js-link.is-active(href='#home') Home
+						a.page-header__nav-link.js-anchor.js-link.is-active(href='#home') 首页
 					li
-						a.page-header__nav-link.js-anchor.js-link(href='#portfolio') Portfolio
+						a.page-header__nav-link.js-anchor.js-link(href='#portfolio') 关于华钧
 					li
-						a.page-header__nav-link.js-anchor.js-link(href='#team') About
+						a.page-header__nav-link.js-anchor.js-link(href='#team') 华钧资讯
 					li
-						a.page-header__nav-link.js-anchor.js-link(href='#contact') Contact
+						a.page-header__nav-link.js-anchor.js-link(href='#contact') 联系我们
 
 
 	// $Promo section
 	section#home.promo.js-jumbo
 		h2.promo__title
-			| We build a
-			span  company
-		p.promo__descr We build the company that we wish to have
-		a.promo__btn(href='#') Learn more
+			span  北京华钧广汇投资管理有限公司
+		p.promo__descr 开放 效率 致远
+		a.promo__btn(href='#') 了解更多
 		a.promo__go-next.js-anchor(href='#portfolio') Scroll down
 
 
 	// $Portfolio section
 	section#portfolio.portfolio.js-portfolio
 		.portfolio__inner
-			h2.portfolio__title Portfolio
-			p.portfolio__descr This is how we make it happen
+			h2.portfolio__title 关于华钧
+			p.portfolio__descr 开放 效率 致远
 			nav.portfolio__filter
 				ul
-					li.portfolio__filter-btn.is-selected.js-filter(data-filter='all') All
-					li.portfolio__filter-btn.js-filter(data-filter='web') Web design
-					li.portfolio__filter-btn.js-filter(data-filter='graphic') Graphic design
-					li.portfolio__filter-btn.js-filter(data-filter='flat') Flat design
+					li.portfolio__filter-btn.is-selected.js-filter 公司简介
+					li.portfolio__filter-btn.js-filter 组织架构
+					li.portfolio__filter-btn.js-filter 投资理念
+					li.portfolio__filter-btn.js-filter 企业文化
 			ul.portfolio__content
-				li.portfolio__item.js-item(data-cat='all flat')
-					a(href='#')
-						img.portfolio__item-img.js-lazy(src='static/images/port1.png', alt='')
-						.portfolio__item-caption
-							span.portfolio__item-title Example title
-							span.portfolio__item-cat Flat design
-				li.portfolio__item.js-item(data-cat='all web')
-					a(href='#')
-						img.portfolio__item-img.js-lazy(src='static/images/port2.png', alt='')
-						.portfolio__item-caption
-							span.portfolio__item-title Example title
-							span.portfolio__item-cat Web design
-				li.portfolio__item.js-item(data-cat='all graphic')
-					a(href='#')
-						img.portfolio__item-img.js-lazy(src='static/images/port3.png', alt='')
-						.portfolio__item-caption
-							span.portfolio__item-title Example title
-							span.portfolio__item-cat Graphic design
-				li.portfolio__item.js-item(data-cat='all graphic web')
-					a(href='#')
-						img.portfolio__item-img.js-lazy(src='static/images/port4.png', alt='')
-						.portfolio__item-caption
-							span.portfolio__item-title Example title
-							span.portfolio__item-cat Graphic design
-				li.portfolio__item.js-item(data-cat='all graphic flat')
-					a(href='#')
-						img.portfolio__item-img.js-lazy(src='static/images/port6.png', alt='')
-						.portfolio__item-caption
-							span.portfolio__item-title Example title
-							span.portfolio__item-cat Flat design
-				li.portfolio__item.js-item(data-cat='all web')
-					a(href='#')
-						img.portfolio__item-img.js-lazy(src='static/images/port5.png', alt='')
-						.portfolio__item-caption
-							span.portfolio__item-title Example title
-							span.portfolio__item-cat Web design
-				li.portfolio__item.js-item(data-cat='all flat web')
-					a(href='#')
-						img.portfolio__item-img.js-lazy(src='static/images/port1.png', alt='')
-						.portfolio__item-caption
-							span.portfolio__item-title Example title
-							span.portfolio__item-cat Flat design
-				li.portfolio__item.js-item(data-cat='all web')
-					a(href='#')
-						img.portfolio__item-img.js-lazy(src='static/images/port2.png', alt='')
-						.portfolio__item-caption
-							span.portfolio__item-title Example title
-							span.portfolio__item-cat Web design
+				.grid-container
+					ul.services.services_advisory
+						li.services__item.icon.icon_research
+							h2 公司简介
+							p.team__descr
+							p 北京华钧广汇投资管理有限公司成立于2015年，注册资本1000万元。2016年十月核心团队归国，成立公司，搭建自营交易系统，并根据中国市场特色研发相关策略。 2017年三月系统及策略研发完成，市场交易资源同步到位，正式开启国内衍生品市场实盘交易运营。2018年3月，在短短一年时间之中，完成除A股之外的全衍生品市场布局，全年收益状况极佳，从自营正式向资管过度。
+								| 公司目前管理千万级资本，同时，已获得证券类基金业协会管理人资格。公司拥有一支致力于科技金融开发创新的优秀量化交易团队，队内核心成员多数为海归金融数学/工程硕士学位取得者，有从事期货及各类金融衍生品交易的丰富经验。以统计套利量化模型为核心，以自动化交易系统为基础，实现业内最优质的期货期权高频交易服务系统。
+							p.team__descr
+							p.team__descr
+
+						li.services__item.icon.icon_strategy
+							h2 组织架构
+							img(src='static/images/companystructure.png', alt='公司结构')
+							p 公司拥有一支架构明晰、经营思路成熟、各部高效配合、策略技术水平优越、风控系统严格稳健的优秀量化交易团队。正因如此，我团队量化交易的历史、现时及预期收益率都表现十
+								| 分出色。
+							p.team__descr
+							p.team__descr
+
+						li.services__item.icon.icon_improve
+							h2 投资理念
+							p.team__descr
+							p 以统计套利量化模型为核心，以自动化交易系统为基础，从市场微观结构出发，避免人为主观情绪的干预，实现业内最优质的衍生品程序化高频交易体系。我司风控策略利用制度管理、流程设计、专业分工、专人监督和信息技术手段相结合的方式实现对市场风险、信用风险、操作风险三大模块的全方位覆盖。
+								| 在制度方面，公司重大投资决策上设有对投资决策、风险评审的专门机构投资决策委员会。投资决策委员会以“专业审查、集体审议、独立表决”为宗旨， 遵循独立、客观、公正的原则，保证评审活动依据客观事实做出符合公司利益的判断，为公司决策提供可靠的参考依据，从而防范公司发生重大决策失误风险。
+								| 投资方向上，我们采取多品种多市场多策略的投资理念。短周期预测、盘口、做市、国外高频的全部风控囊括，加之趋势策略的研究与开发，不仅可以捕捉不同时间段的错综复杂的市场行情，而且带来“东方不亮西方亮”的效应，可以最大程度保证收益的稳定性持续性。
+								| 交易策略上，我们除了拥有有健全的对冲机制外，还有各种应急预案应对各种突发情况。我们在每一个交易策略都设有明确的分级止损点，加之严格控制秒级持仓时间，只会有 tick 级浮亏，而不会有趋势性亏损，可以有效保护交易资本安全。
+							p.team__descr
+							p.team__descr
+
+						li.services__item.icon.icon_plan
+							h2 企业文化
+							p.team__descr
+
+							h3.team__member-name 开放
+							p 开放是公司的宗旨和核心。公司致力创造一个开放自由的工作环境，在技术上多元，文化上包容，思想上创新。
+							p.team__descr
+
+							h3.team__member-name 效率
+							p 效率是公司经营理念。员工各司其职，分工明确，及时沟通。我们奉行效率至上，在相同的时间内争取走的比别人更远。
+							p.team__descr
+
+							h3.team__member-name 致远
+							p 致远是公司的愿景。公司立足现在，放眼未来，目标明确。我们致力于创造多元化策略，多元化市场，高收益低风险的量化交易服务体系。我们的目标不止于创造财富，于客户于社会创造价值才是我们的依归。
 
 
 	// $Team section
 	section#team.team
 		.team__inner
-			h2.team__title About us
-			p.team__descr These are people who make it happen
+			h2.team__title 华钧资讯
+			p.team__descr
 			.team__member
 				img(src='static/images/ava1.jpg', alt='Melanie Doe')
 				.team__member-info
@@ -157,22 +150,22 @@ block body-content
 	// $Contact section
 	section#contact.contact
 		.contact__inner
-			h2.contact__title Contact us
-			p.contact__descr Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+			h2.contact__title 联系我们
+			p.contact__descr 如果您有任何疑问或意向，欢迎联系我们。
 			form.contact__form(action='#', method='post')
-				input#name.contact__form-input(type='text', name='name', placeholder='Your name')
-				input#email.contact__form-input(type='email', name='email', placeholder='Your email')
-				textarea#message.contact__form-tarea(name='message', placeholder='Your message')
-				input.contact__form-submit(type='submit', value='Submit')
+				input#name.contact__form-input(type='text', name='name', placeholder='姓名')
+				input#email.contact__form-input(type='email', name='email', placeholder='邮箱')
+				textarea#message.contact__form-tarea(name='message', placeholder='您的留言')
+				input.contact__form-submit(type='submit', value='提交')
 			.contact__card.vcard
-				h3.contact__card-title Information
+				h3.contact__card-title 公司信息
 				.contact__card-item.place
-					.fn.org Bak-One Company
+					.fn.org 北京华钧广汇投资管理有限公司
 					.adr
-						.street-address 12345 Hollywood Bvld Street
-						span.locality Beijing
+						.street-address 朝阳区
+						span.locality 北京
 						| ,
-						span.region  China
+						span.region  中国
 				.contact__card-item.tel
 					| +010
 					span.type &nbsp;(Phone)&nbsp;
@@ -181,11 +174,11 @@ block body-content
 					| +123
 					span.type &nbsp;(FAX)&nbsp;
 					| 0011223
-				a.contact__card-item.email(href='#') info@companyname.com
+				a.contact__card-item.email(href='#') info@genwealth.com.cn
 
 
 	// $Page footer
 	footer.page-footer
 		.page-footer__inner
 			span.page-footer__copyright &copy; Copyright 2013 Bak-One | One Page Flat Template
-			a.page-footer__gotop.js-anchor(href='#home') Go to top
+			a.page-footer__gotop.js-anchor(href='#home') 回到顶部
