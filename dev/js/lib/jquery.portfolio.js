@@ -1,4 +1,4 @@
-/* 
+/*
  * portfolio filter script to 'mix' items
 */
 
@@ -12,7 +12,7 @@
 
     function MixFilter( element, options ) {
         this.options = $.extend( {}, defaults, options) ;
-        this.element = element;     
+        this.element = element;
         this.init();
     }
 
@@ -32,9 +32,9 @@
         		$item.each(function () {
 					var itemVal = $(this).data("cat").toLowerCase();
 					if (!$(this).is("[data-cat*=" + filterVal + "]")) {
-						$(this).addClass('is-hidden');
+						$(this).hide()
 					} else {
-						$(this).removeClass('is-hidden');
+						$(this).show()
 					}
 				});
         	}
@@ -43,7 +43,7 @@
     };
 
     $.fn.mixFilter = function ( options ) {
-        return this.each(function () {          
+        return this.each(function () {
             new MixFilter( this, options );
         });
     };
